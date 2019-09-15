@@ -1,86 +1,93 @@
-# Android CI [![Android CI on Docker Hub](https://img.shields.io/docker/automated/javiersantos/android-ci.svg)](https://store.docker.com/community/images/javiersantos/android-ci)
+# Android CI [![Android CI on Docker Hub](https://img.shields.io/docker/automated/ialex97/android-ci.svg)](https://store.docker.com/community/images/ialex97/android-ci)
 ### Continous Integration (CI) for Android apps on GitLab / Bitbucket
 An image for building Android apps with support for multiple SDK Build Tools. This Docker image contains the Android SDK and most common packages necessary for building Android apps in a CI tool. Based on [jangrewe/gitlab-ci-android](https://github.com/jangrewe/gitlab-ci-android).
 
 ## Available images
-### javiersantos/android-ci:latest
+### ialex97/android-ci:latest
 
 ```yml
-image: javiersantos/android-ci:latest
+image: ialex97/android-ci:latest
 ```
 
 Includes the latest SDK Build Tools and SDK Platform.
 
-* Build Tools: 28.0.3
-* Platform: Android 25, 26, 27 & 28
-
-### javiersantos/android-ci:28.0.3
+* Build Tools: 29.0.2
+* Platform: Android 26, 27, 28, 29
 
 ```yml
-image: javiersantos/android-ci:28.0.3
+image: ialex97/android-ci:29.0.2
+```
+
+* Build Tools: 29.0.2
+* Platform: Android 26, 27, 28, 29
+
+### ialex97/android-ci:28.0.3
+
+```yml
+image: ialex97/android-ci:28.0.3
 ```
 
 * Build Tools: 28.0.3
 * Platform: Android 25, 26, 27 & 28
 
-### javiersantos/android-ci:28.0.2
+### ialex97/android-ci:28.0.2
 
 ```yml
-image: javiersantos/android-ci:28.0.2
+image: ialex97/android-ci:28.0.2
 ```
 
 * Build Tools: 28.0.2
 * Platform: Android 25, 26, 27 & 28
 
-### javiersantos/android-ci:27.0.3
+### ialex97/android-ci:27.0.3
 
 ```yml
-image: javiersantos/android-ci:27.0.3
+image: ialex97/android-ci:27.0.3
 ```
 
 * Build Tools: 27.0.3
 * Platform: Android 25, 26 & 27
 
-### javiersantos/android-ci:27.0.2
+### ialex97/android-ci:27.0.2
 
 ```yml
-image: javiersantos/android-ci:27.0.2
+image: ialex97/android-ci:27.0.2
 ```
 
 * Build Tools: 27.0.2
 * Platform: Android 25, 26 & 27
 
-### javiersantos/android-ci:27.0.1
+### ialex97/android-ci:27.0.1
 
 ```yml
-image: javiersantos/android-ci:27.0.1
+image: ialex97/android-ci:27.0.1
 ```
 
 * Build Tools: 27.0.1
 * Platform: Android 25, 26 & 27
 
-### javiersantos/android-ci:27.0.0
+### ialex97/android-ci:27.0.0
 
 ```yml
-image: javiersantos/android-ci:27.0.0
+image: ialex97/android-ci:27.0.0
 ```
 
 * Build Tools: 27.0.0
 * Platform: Android 25, 26 & 27
 
-### javiersantos/android-ci:26.0.3
+### ialex97/android-ci:26.0.3
 
 ```yml
-image: javiersantos/android-ci:26.0.3
+image: ialex97/android-ci:26.0.3
 ```
 
 * Build Tools: 26.0.3
 * Platform: Android 25, 26 & 27
 
-### javiersantos/android-ci:26.0.2
+### ialex97/android-ci:26.0.2
 
 ```yml
-image: javiersantos/android-ci:26.0.2
+image: ialex97/android-ci:26.0.2
 ```
 
 * Build Tools: 26.0.2
@@ -91,7 +98,7 @@ image: javiersantos/android-ci:26.0.2
 *.gitlab-ci.yml*
 
 ```yml
-image: javiersantos/android-ci:27.0.3
+image: ialex97/android-ci:27.0.3
 
 before_script:
     - export GRADLE_USER_HOME=`pwd`/.gradle
@@ -118,7 +125,7 @@ build:
 *bitbucket-pipeline.yml*
 
 ```yml
-image: javiersantos/android-ci:27.0.3
+image: ialex97/android-ci:27.0.3
 
 pipelines:
   default:
